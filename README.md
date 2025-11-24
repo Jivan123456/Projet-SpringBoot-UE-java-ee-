@@ -22,6 +22,7 @@
 
 Ce projet est une **application full-stack actuellement en cours de développement**, réalisée dans le cadre de l'UE Java EE. L'objectif principal est de créer un système complet de gestion des infrastructures universitaires (universités, campus, bâtiments et salles) avec une architecture moderne et modulaire.
 
+
 ### Stack technique
 
 L'application repose sur une architecture full-stack  qui sépare le backend et le frontend :
@@ -49,6 +50,11 @@ Le dossier **`lib/`** du projet contient l'intégralité du code source Flutter,
 Les prochaines étapes du développement incluront l'ajout des interfaces Flutter pour la gestion complète des campus, bâtiments et salles, ainsi que l'implémentation des fonctionnalités d'édition et de suppression. Nous prévoyons également d'intégrer l'affichage des statistiques et des recherches avancées directement dans l'application mobile.
 
 ---
+## Interface déja fait : 
+
+<img width="1232" height="1002" alt="Capture d’écran 2025-11-24 133212" src="https://github.com/user-attachments/assets/b16171c7-34d8-4d6e-b103-7f88aa2eebb8" />
+<img width="1237" height="1042" alt="Capture d’écran 2025-11-24 133237" src="https://github.com/user-attachments/assets/97c6f4ba-08ac-4e38-b59d-d663ed8847d7" />
+<img width="1007" height="748" alt="Capture d’écran 2025-11-24 133256" src="https://github.com/user-attachments/assets/1aa27dbb-7338-4ac8-b76e-b12ee86e1b7a" />
 
 ##  Caractéristiques
 
@@ -547,5 +553,6 @@ Td1/
 Ce projet est développé dans un cadre éducatif pour le cours de Java EE.
 
 ---
+
 
 
