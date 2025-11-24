@@ -10,7 +10,7 @@
 
 **Plateforme complète de gestion des infrastructures universitaires**
 
-[Caractéristiques](#-caractéristiques) • [Architecture](#-architecture) • [Installation](#-installation) • [API](#-documentation-api) • [Frontend](#-frontend-flutter)
+
 
 </div>
 
@@ -547,4 +547,5 @@ Td1/
 Ce projet est développé dans un cadre éducatif pour le cours de Java EE.
 
 ---
+
 
