@@ -35,26 +35,28 @@ L'application repose sur une architecture full-stack  qui sépare le backend et 
 
 ###  État actuel du développement 
 
-Le projet est dans une **phase active de développement**. À ce stade, le backend Spring Boot est entièrement fonctionnel avec tous les endpoints REST opérationnels pour l'ensemble des entités (Universités, Campus, Bâtiments, Salles, Composantes). La base de données MySQL est conteneurisée avec Docker et le schéma relationnel complet est implémenté.
+Le projet est dans une **phase considéré comme terminé**.Le backend Spring Boot est entièrement fonctionnel avec tous les endpoints REST opérationnels pour l'ensemble des entités (Universités, Campus, Bâtiments, Salles, Composantes etc..). La base de données MySQL est conteneurisée avec Docker et le schéma relationnel complet est implémenté.
 
-Concernant le frontend Flutter, j'ai  développé les **premières fonctionnalités essentielles** qui permettent d'interagir avec le système. Actuellement, l'application mobile offre deux fonctionnalités principales :
+Concernant le frontend Flutter, j'ai  développé les fonctionnalités essentielles  qui permettent d'interagir avec le système. L'application mobile offre les fonctionnalités principales suivantes:
 
 1. **Visualisation de la liste des universités** : Les utilisateurs peuvent consulter l'ensemble des universités enregistrées dans le système, avec l'affichage de leurs informations principales (nom, acronyme, présidence, année de création).
 
 2. **Création de nouvelles universités** : Un formulaire complet permet d'ajouter de nouvelles universités au système, avec validation des champs et communication en temps réel avec l'API backend.
 
+3. TODO
+
+
 Le dossier **`lib/`** du projet contient l'intégralité du code source Flutter, organisé de manière structurée avec les modèles de données, les services d'API, et les pages de l'interface utilisateur.
 
-###  Fonctionnalités à venir
 
-Les prochaines étapes du développement incluront l'ajout des interfaces Flutter pour la gestion complète des campus, bâtiments et salles, ainsi que l'implémentation des fonctionnalités d'édition et de suppression. Nous prévoyons également d'intégrer l'affichage des statistiques et des recherches avancées directement dans l'application mobile.
 
 ---
-## Interface déja fait : 
+## Interface du projet : 
 
 <img width="1232" height="1002" alt="Capture d’écran 2025-11-24 133212" src="https://github.com/user-attachments/assets/b16171c7-34d8-4d6e-b103-7f88aa2eebb8" />
 <img width="1237" height="1042" alt="Capture d’écran 2025-11-24 133237" src="https://github.com/user-attachments/assets/97c6f4ba-08ac-4e38-b59d-d663ed8847d7" />
 <img width="1007" height="748" alt="Capture d’écran 2025-11-24 133256" src="https://github.com/user-attachments/assets/1aa27dbb-7338-4ac8-b76e-b12ee86e1b7a" />
+TODO
 
 ##  Caractéristiques
 
@@ -474,73 +476,7 @@ Formulaire de création/édition avec validation des champs :
 ## 📂 Structure du projet
 
 ```
-Td1/
-├── 📁 src/
-│   ├── 📁 main/
-│   │   ├── 📁 java/Ex/
-│   │   │   ├── 📄 CL_Appli.java           # Classe principale Spring Boot
-│   │   │   ├── 📁 config/                 # Configurations (CORS, Swagger)
-│   │   │   │   ├── WebConfig.java
-│   │   │   │   └── OpenAPIConfig.java
-│   │   │   ├── 📁 controller/             # REST Controllers
-│   │   │   │   ├── UniversiteController.java
-│   │   │   │   ├── CampusController.java
-│   │   │   │   ├── BatimentController.java
-│   │   │   │   ├── SalleController.java
-│   │   │   │   └── ComposanteController.java
-│   │   │   ├── 📁 service/                # Business Logic
-│   │   │   │   ├── UniversiteService.java
-│   │   │   │   ├── CampusService.java
-│   │   │   │   ├── BatimentService.java
-│   │   │   │   ├── SalleService.java
-│   │   │   │   ├── ComposanteService.java
-│   │   │   │   └── DtoMapper.java
-│   │   │   ├── 📁 domain/                 # Repositories (Data Access)
-│   │   │   │   ├── UniversiteRepository.java
-│   │   │   │   ├── CampusRepository.java
-│   │   │   │   ├── BatimentRepository.java
-│   │   │   │   ├── SalleRepository.java
-│   │   │   │   └── ComposanteRepository.java
-│   │   │   ├── 📁 modele/                 # Entities (JPA)
-│   │   │   │   ├── Universite.java
-│   │   │   │   ├── Campus.java
-│   │   │   │   ├── Batiment.java
-│   │   │   │   ├── Salle.java
-│   │   │   │   ├── Composante.java
-│   │   │   │   └── TypeSalle.java
-│   │   │   └── 📁 dto/                    # Data Transfer Objects
-│   │   │       ├── UniversiteDTO.java
-│   │   │       ├── UniversiteStatisticsDTO.java
-│   │   │       ├── CampusDTO.java
-│   │   │       ├── CampusStatisticsDTO.java
-│   │   │       ├── BatimentDTO.java
-│   │   │       ├── BatimentStatisticsDTO.java
-│   │   │       ├── SalleDTO.java
-│   │   │       └── ComposanteDTO.java
-│   │   └── 📁 resources/
-│   │       ├── application.properties      # Configuration Spring
-│   │       └── 📁 static/                  # Ressources statiques
-│   └── 📁 test/java/Ex/                   # Tests unitaires
-│       ├── TestCreation.java
-│       └── TestSalleRepository.java
-│
-├── 📁 lib/                                 # Frontend Flutter
-│   ├── 📄 main.dart                       # Point d'entrée Flutter
-│   ├── 📁 models/
-│   │   └── universite.dart
-│   ├── 📁 services/
-│   │   └── api_service.dart
-│   └── 📁 pages/
-│       ├── home_page.dart
-│       ├── universite_list_page.dart
-│       └── add_universite_page.dart
-│
-├── 📁 scripts/                            # Scripts utilitaires
-├── 📁 target/                             # Fichiers compilés (généré)
-├── 📄 docker-compose.yml                  # Configuration Docker
-├── 📄 pom.xml                             # Configuration Maven
-├── 📄 README.md                           # Ce fichier
-└── 📄 .gitignore                          # Fichiers ignorés par Git
+TODO
 ```
 
 
@@ -553,6 +489,7 @@ Td1/
 Ce projet est développé dans un cadre éducatif pour le cours de Java EE.
 
 ---
+
 
 
 
