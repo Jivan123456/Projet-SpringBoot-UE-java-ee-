@@ -1,4 +1,4 @@
-#  Système de Gestion Universitaire
+#  Système de Gestion Universitaire (outdated )
 
 <div align="center">
 
@@ -489,6 +489,7 @@ TODO
 Ce projet est développé dans un cadre éducatif pour le cours de Java EE.
 
 ---
+
 
 
 
